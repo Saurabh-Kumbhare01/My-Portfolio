@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiDownload, FiPrinter, FiCheckCircle, FiExternalLink, FiBriefcase, FiBookOpen, FiAward, FiCode } from 'react-icons/fi';
-import { personalDetails, educationData, projectsData, skillsData, certificationsAndAchievements } from '../data/portfolioData';
+import { personalDetails, educationData, projectsData, skillsData, certificationsAndAchievements, resumeSkills } from '../data/portfolioData';
 
 const ResumeModal = ({ isOpen, onClose }) => {
   const modalContentRef = useRef(null);
@@ -33,18 +33,20 @@ const ResumeModal = ({ isOpen, onClose }) => {
           <h1>${personalDetails.name}</h1>
           <div class="subtitle">${personalDetails.title}</div>
           <div class="contact">
-            ${personalDetails.location} | ${personalDetails.phone} | ${personalDetails.email}<br/>
-            LinkedIn: ${personalDetails.linkedin} | GitHub: ${personalDetails.github}
+            ${personalDetails.location} | ${personalDetails.phone} | <a href="mailto:${personalDetails.email}" style="color: #0284c7; text-decoration: none;">${personalDetails.email}</a><br/>
+            <a href="${personalDetails.linkedin}" target="_blank" style="color: #0284c7; text-decoration: none;">LinkedIn: ${personalDetails.linkedin}</a> | <a href="${personalDetails.github}" target="_blank" style="color: #0284c7; text-decoration: none;">GitHub: ${personalDetails.github}</a>
           </div>
 
           <h2>Professional Summary</h2>
           <p>${personalDetails.bioLong}</p>
 
           <h2>Technical Skills</h2>
-          <p><strong>Languages:</strong> Python, JavaScript, SQL, HTML5, CSS3</p>
-          <p><strong>Frontend:</strong> React.js, Tailwind CSS, Bootstrap, Responsive Design, Modern UI/UX</p>
-          <p><strong>Databases:</strong> PostgreSQL, MySQL, SQLite</p>
-          <p><strong>Tools & AI:</strong> Git, GitHub, VS Code, ChatGPT, GitHub Copilot, Lovable AI</p>
+          <p><strong>Languages:</strong> JavaScript, Python, SQL</p>
+          <p><strong>Frontend:</strong> HTML5, CSS3, React.js, Tailwind CSS</p>
+          <p><strong>Backend & API:</strong> FastAPI, REST APIs, JWT Authentication</p>
+          <p><strong>Database:</strong> PostgreSQL, MySQL, SQLite</p>
+          <p><strong>Tools & Concepts:</strong> Git, GitHub, VS Code</p>
+          <p><strong>AI:</strong> OpenAI API, GenAI/LLMs, AI Agents, NLP Basics</p>
 
           <h2>Projects</h2>
           ${projectsData.map(p => `
@@ -179,23 +181,13 @@ const ResumeModal = ({ isOpen, onClose }) => {
               <h4 className="text-xs font-mono uppercase tracking-widest text-cyan-400 font-bold mb-3 flex items-center gap-2">
                 <FiCode /> Technical Skills
               </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <div className="p-3 rounded-xl bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-                  <span className="font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 block mb-1">Languages:</span>
-                  <span className="text-slate-400">Python, JavaScript, SQL, HTML5, CSS3</span>
-                </div>
-                <div className="p-3 rounded-xl bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-                  <span className="font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 block mb-1">Frontend:</span>
-                  <span className="text-slate-400">React.js, Tailwind CSS, Bootstrap, Responsive Design, Modern UI/UX</span>
-                </div>
-                <div className="p-3 rounded-xl bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-                  <span className="font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 block mb-1">Databases:</span>
-                  <span className="text-slate-400">PostgreSQL, MySQL, SQLite</span>
-                </div>
-                <div className="p-3 rounded-xl bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-                  <span className="font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 block mb-1">Tools & AI:</span>
-                  <span className="text-slate-400">Git, GitHub, VS Code, ChatGPT, GitHub Copilot, Lovable AI</span>
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+                {resumeSkills.map((item, idx) => (
+                  <div key={idx} className="p-3 rounded-xl bg-slate-800/50 dark:bg-slate-800/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
+                    <span className="font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 block mb-1">{item.category}:</span>
+                    <span className="text-slate-400 dark:text-slate-400 light:text-slate-600">{item.skills}</span>
+                  </div>
+                ))}
               </div>
             </div>
 

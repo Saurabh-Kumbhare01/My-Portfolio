@@ -2,9 +2,9 @@ export const personalDetails = {
   name: "Saurabh Premkumar Kumbhare",
   firstName: "Saurabh",
   lastName: "Kumbhare",
-  title: "Full-Stack Developer | Python | React.js | AI-Driven Web Solutions",
+  title: "Web Developer | Python | React.js | AI-Driven Web Solutions",
   roles: [
-    "Full-Stack Developer",
+    "Web Developer",
     "Python & FastAPI Architect",
     "React.js Frontend Engineer",
     "AI Web Solutions Specialist",
@@ -16,11 +16,11 @@ export const personalDetails = {
   phoneRaw: "+918379001488",
   github: "https://github.com/Saurabh-Kumbhare01",
   githubUsername: "Saurabh-Kumbhare01",
-  linkedin: "https://linkedin.com/in/saurabh-kumbhare",
-  linkedinUsername: "saurabh-kumbhare",
+  linkedin: "https://www.linkedin.com/in/saurabh-kumbhare-771b33346?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  linkedinUsername: "saurabh-kumbhare-771b33346",
   availability: "Open to Full-Time & High-Impact Developer Roles (2026 Ready)",
-  bioShort: "Aspiring Full-Stack Developer skilled in Python, JavaScript, and React.js, dedicated to crafting responsive web apps, REST APIs, and AI-integrated products that solve real-world problems.",
-  bioLong: "Aspiring Full-Stack Developer skilled in Python, JavaScript, and React.js, with hands-on experience building responsive web applications, REST APIs, and AI-integrated tools that solve real-world problems. Possesses a strong foundation in Data Structures and Algorithms, Object-Oriented Programming, modern UI/UX, version control with Git/GitHub, and AI-assisted development workflows aligned with 2026 tech industry hiring standards.",
+  bioShort: "Aspiring Web Developer skilled in Python, JavaScript, and React.js, dedicated to crafting responsive web apps, REST APIs, and AI-integrated products that solve real-world problems.",
+  bioLong: "Aspiring Web Developer skilled in Python, JavaScript, and React.js, with hands-on experience building responsive web applications, REST APIs, and AI-integrated tools that solve real-world problems. Possesses a strong foundation in Data Structures and Algorithms, Object-Oriented Programming, modern UI/UX, version control with Git/GitHub, and AI-assisted development workflows aligned with 2026 tech industry hiring standards.",
   careerObjective: "To leverage expertise in full-stack architecture, modern JavaScript frameworks, Python backends, and Generative AI APIs to build scalable, high-performance web platforms that deliver exceptional user experiences.",
   strengths: [
     "Clean & Modular Architecture (MVC / Component-based)",
@@ -37,37 +37,57 @@ export const personalDetails = {
   ]
 };
 
+export const resumeSkills = [
+  { category: "Languages", skills: "JavaScript, Python, SQL" },
+  { category: "Frontend", skills: "HTML5, CSS3, React.js, Tailwind CSS" },
+  { category: "Backend & API", skills: "FastAPI, REST APIs, JWT Authentication" },
+  { category: "Database", skills: "PostgreSQL, MySQL, SQLite" },
+  { category: "Tools & Concepts", skills: "Git, GitHub, VS Code" },
+  { category: "AI", skills: "OpenAI API, GenAI/LLMs, AI Agents, NLP Basics" }
+];
+
 export const skillsData = {
   categories: [
     { id: "all", label: "All Skills" },
     { id: "languages", label: "Languages" },
     { id: "frontend", label: "Frontend" },
-    { id: "databases", label: "Databases" },
-    { id: "tools_ai", label: "Tools & AI" }
+    { id: "backend_api", label: "Backend & API" },
+    { id: "database", label: "Database" },
+    { id: "tools_concepts", label: "Tools & Concepts" },
+    { id: "ai", label: "AI" }
   ],
   items: [
-    // Languages
-    { name: "Python", category: "languages", level: 90, icon: "SiPython", color: "#3776AB", tag: "Languages" },
-    { name: "JavaScript", category: "languages", level: 88, icon: "SiJavascript", color: "#F7DF1E", tag: "Languages" },
-    { name: "SQL", category: "languages", level: 82, icon: "SiPostgresql", color: "#4169E1", tag: "Languages" },
-    { name: "HTML5", category: "languages", level: 95, icon: "SiHtml5", color: "#E34F26", tag: "Languages" },
-    { name: "CSS3", category: "languages", level: 90, icon: "FiCode", color: "#1572B6", tag: "Languages" },
+    // Languages: JavaScript, Python, SQL
+    { name: "JavaScript", category: "languages", icon: "SiJavascript", color: "#F7DF1E", tag: "Languages" },
+    { name: "Python", category: "languages", icon: "SiPython", color: "#3776AB", tag: "Languages" },
+    { name: "SQL", category: "languages", icon: "SiPostgresql", color: "#4169E1", tag: "Languages" },
 
-    // Frontend
-    { name: "React.js", category: "frontend", level: 92, icon: "SiReact", color: "#61DAFB", tag: "Frontend" },
-    { name: "Tailwind CSS", category: "frontend", level: 94, icon: "SiTailwindcss", color: "#06B6D4", tag: "Frontend" },
-    { name: "Bootstrap", category: "frontend", level: 85, icon: "SiBootstrap", color: "#7952B3", tag: "Frontend" },
+    // Frontend: HTML5, CSS3, React.js, Tailwind CSS
+    { name: "HTML5", category: "frontend", icon: "SiHtml5", color: "#E34F26", tag: "Frontend" },
+    { name: "CSS3", category: "frontend", icon: "FiCode", color: "#1572B6", tag: "Frontend" },
+    { name: "React.js", category: "frontend", icon: "SiReact", color: "#61DAFB", tag: "Frontend" },
+    { name: "Tailwind CSS", category: "frontend", icon: "SiTailwindcss", color: "#06B6D4", tag: "Frontend" },
 
-    // Databases
-    { name: "PostgreSQL", category: "databases", level: 84, icon: "SiPostgresql", color: "#4169E1", tag: "Databases" },
-    { name: "MySQL", category: "databases", level: 82, icon: "SiMysql", color: "#4479A1", tag: "Databases" },
+    // Backend & API: FastAPI, REST APIs, JWT Authentication
+    { name: "FastAPI", category: "backend_api", icon: "SiFastapi", color: "#009688", tag: "Backend & API" },
+    { name: "REST APIs", category: "backend_api", icon: "FiGlobe", color: "#6366F1", tag: "Backend & API" },
+    { name: "JWT Authentication", category: "backend_api", icon: "FiCheckCircle", color: "#EC4899", tag: "Backend & API" },
 
-    // Tools & AI
-    { name: "GitHub", category: "tools_ai", level: 92, icon: "SiGithub", color: "#6E7681", tag: "Tools & AI" },
-    { name: "VS Code", category: "tools_ai", level: 95, icon: "FiCode", color: "#007ACC", tag: "Tools & AI" },
-    { name: "ChatGPT", category: "tools_ai", level: 92, icon: "FiCpu", color: "#10A37F", tag: "Tools & AI" },
-    { name: "GitHub Copilot", category: "tools_ai", level: 90, icon: "SiGithub", color: "#6E7681", tag: "Tools & AI" },
-    { name: "Lovable AI", category: "tools_ai", level: 88, icon: "FiCpu", color: "#F59E0B", tag: "Tools & AI" }
+    // Database: PostgreSQL, MySQL, SQLite
+    { name: "PostgreSQL", category: "database", icon: "SiPostgresql", color: "#4169E1", tag: "Database" },
+    { name: "MySQL", category: "database", icon: "SiMysql", color: "#4479A1", tag: "Database" },
+    { name: "SQLite", category: "database", icon: "SiSqlite", color: "#003B57", tag: "Database" },
+
+    // Tools & Concepts: Git, GitHub, VS Code
+    { name: "Git", category: "tools_concepts", icon: "SiGit", color: "#F05032", tag: "Tools & Concepts" },
+    { name: "GitHub", category: "tools_concepts", icon: "SiGithub", color: "#6E7681", tag: "Tools & Concepts" },
+    { name: "VS Code", category: "tools_concepts", icon: "FiCode", color: "#007ACC", tag: "Tools & Concepts" },
+
+    // AI: OpenAI API, GenAI/LLMs, AI Agents, NLP Basics
+    { name: "OpenAI API", category: "ai", icon: "FiCpu", color: "#10A37F", tag: "AI" },
+    { name: "GenAI/LLMs", category: "ai", icon: "FiCpu", color: "#8B5CF6", tag: "AI" },
+    { name: "AI Agents", category: "ai", icon: "FiCpu", color: "#06B6D4", tag: "AI" },
+    { name: "NLP Basics", category: "ai", icon: "FiCpu", color: "#F59E0B", tag: "AI" }
   ]
 };
 
@@ -195,7 +215,7 @@ export const educationData = [
     duration: "2025 – 2027",
     status: "In Progress",
     scoreLabel: "Current CGPA",
-    score: "6.75 / 10",
+    score: "7.37 / 10",
     highlights: [
       "Advanced studies in Cloud Architecture, AI Integration, and Enterprise Web Software.",
       "Specializing in AI-Driven Web Applications and Scalable Full-Stack Engineering.",
@@ -223,7 +243,7 @@ export const educationData = [
 
 export const certificationsAndAchievements = [
   {
-    title: "Python & Full-Stack Development Training",
+    title: "Python & Web Development Training",
     issuer: "Skill Tech & Hands-On Engineering",
     date: "2024 - 2025",
     category: "Certification",
@@ -235,7 +255,7 @@ export const certificationsAndAchievements = [
     issuer: "Open Source & GitHub Repositories",
     date: "2024 - Present",
     category: "Achievement",
-    description: "Built and published multiple production-grade full-stack web and computer vision repositories demonstrating complete software lifecycle mastery.",
+    description: "Built and published multiple production-grade web and computer vision repositories demonstrating complete software lifecycle mastery.",
     badge: "Open Source"
   },
   {
@@ -258,13 +278,13 @@ export const certificationsAndAchievements = [
 
 export const experienceHighlights = [
   {
-    title: "Full-Stack & AI Web Solutions Developer",
+    title: "Web Developer & AI Solutions",
     organization: "Independent Projects & Open Source",
     period: "2024 - Present",
     location: "Nagpur, India",
     type: "Practical Work & Development",
     points: [
-      "Architected and deployed full-stack web applications combining React.js UI frontends with FastAPI Python backends.",
+      "Architected and deployed responsive web applications combining React.js UI frontends with FastAPI Python backends.",
       "Integrated Generative AI APIs (OpenAI) to enhance resume content formatting, keyword extraction, and user UX.",
       "Designed computer vision tools using OpenCV and Streamlit for live facial recognition and automated data logging.",
       "Adopted AI-assisted development workflows (GitHub Copilot, LLM prompt engineering) aligned with 2026 hiring standards."
@@ -276,7 +296,7 @@ export const contactInfo = {
   address: "Nagpur, Maharashtra, India",
   email: "kumbharesaurabh279@gmail.com",
   phone: "+91 8379001488",
-  linkedin: "https://linkedin.com/in/saurabh-kumbhare",
+  linkedin: "https://www.linkedin.com/in/saurabh-kumbhare-771b33346?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   github: "https://github.com/Saurabh-Kumbhare01",
   workingHours: "Mon - Sat: 9:00 AM - 8:00 PM IST"
 };

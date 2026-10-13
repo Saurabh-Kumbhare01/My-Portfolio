@@ -66,7 +66,7 @@ const Navbar = ({ isDark, setIsDark, onOpenResume }) => {
               <span className="text-cyan-400 font-semibold">{personalDetails.lastName}</span>
             </span>
             <span className="text-[11px] font-mono text-cyan-400/90 dark:text-cyan-400/90 light:text-cyan-600">
-              Full-Stack Dev
+              Web Developer
             </span>
           </div>
         </a>

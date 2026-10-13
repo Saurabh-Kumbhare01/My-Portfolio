@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-xs text-slate-500 max-w-sm">
-              Full-Stack Developer skilled in Python, React.js, FastAPI & AI-Driven Web Applications.
+              Web Developer skilled in Python, React.js, FastAPI & AI-Driven Web Applications.
             </p>
           </div>
 

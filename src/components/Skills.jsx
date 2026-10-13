@@ -31,6 +31,10 @@ const iconComponents = {
   SiSqlite: SiSqlite,
   SiGithub: SiGithub,
   SiGit: SiGit,
+  FiCpu: FiCpu,
+  FiCode: FiCode,
+  FiGlobe: FiGlobe,
+  FiCheckCircle: FiCheckCircle,
 };
 
 const Skills = () => {
@@ -110,36 +114,20 @@ const Skills = () => {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3, delay: index * 0.03 }}
                   key={skill.name}
-                  className="glass-card rounded-2xl p-5 border border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 hover:border-cyan-500/40 transition-all hover:scale-[1.02] group"
+                  className="glass-card rounded-2xl p-4 border border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 hover:border-cyan-500/40 transition-all hover:scale-[1.02] group"
                 >
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-3">
-                      <div className="p-2.5 rounded-xl bg-slate-800/80 dark:bg-slate-800/80 light:bg-slate-100 text-cyan-400 group-hover:scale-110 transition-transform">
-                        <IconComp className="w-5 h-5" style={{ color: skill.color || '#06b6d4' }} />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm">
-                          {skill.name}
-                        </h3>
-                        <span className="text-[10px] font-mono text-cyan-400">
-                          {skill.tag}
-                        </span>
-                      </div>
+                  <div className="flex items-center gap-3">
+                    <div className="p-2.5 rounded-xl bg-slate-800/80 dark:bg-slate-800/80 light:bg-slate-100 text-cyan-400 group-hover:scale-110 transition-transform">
+                      <IconComp className="w-5 h-5" style={{ color: skill.color || '#06b6d4' }} />
                     </div>
-                    <span className="text-xs font-mono font-bold text-slate-400">
-                      {skill.level}%
-                    </span>
-                  </div>
-
-                  {/* Animated Progress Bar */}
-                  <div className="w-full h-2 rounded-full bg-slate-800/80 dark:bg-slate-800/80 light:bg-slate-200 overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.1 }}
-                      className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500"
-                    />
+                    <div>
+                      <h3 className="font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm">
+                        {skill.name}
+                      </h3>
+                      <span className="text-[10px] font-mono text-cyan-400">
+                        {skill.tag}
+                      </span>
+                    </div>
                   </div>
                 </motion.div>
               );

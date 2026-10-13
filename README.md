@@ -1,6 +1,6 @@
 # Modern Full-Stack Personal Portfolio - Saurabh Premkumar Kumbhare
 
-A modern, premium, human-crafted personal portfolio web application for **Saurabh Premkumar Kumbhare** (*Full-Stack Developer | Python | React.js | AI-Driven Web Solutions*). Built with **React.js (Vite)**, **Tailwind CSS**, **Framer Motion**, **React Icons**, and **EmailJS**.
+A modern, premium, human-crafted personal portfolio web application for **Saurabh Premkumar Kumbhare** (*Web Developer | Python | React.js | AI-Driven Web Solutions*). Built with **React.js (Vite)**, **Tailwind CSS**, **Framer Motion**, **React Icons**, and **EmailJS**.
 
 ---
 
@@ -130,5 +130,5 @@ npm run preview
 - **Email**: kumbharesaurabh279@gmail.com
 - **Phone**: +91 8379001488
 - **GitHub**: [github.com/Saurabh-Kumbhare01](https://github.com/Saurabh-Kumbhare01)
-- **LinkedIn**: [linkedin.com/in/saurabh-kumbhare](https://linkedin.com/in/saurabh-kumbhare)
+- **LinkedIn**: [linkedin.com/in/saurabh-kumbhare-771b33346](https://www.linkedin.com/in/saurabh-kumbhare-771b33346?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 - **Location**: Nagpur, Maharashtra, India

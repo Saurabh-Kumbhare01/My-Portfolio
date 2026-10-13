@@ -36,7 +36,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm mt-3"
           >
-            Full-Stack Developer passionate about merging clean software design with modern AI capabilities.
+            Web Developer passionate about merging clean software design with modern AI capabilities.
           </motion.p>
         </div>
 

@@ -113,7 +113,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm mt-3"
           >
-            Have a project in mind, full-stack opening, or technical question? Send a message directly.
+            Have a project in mind, web developer opening, or technical question? Send a message directly.
           </motion.p>
         </div>
 
@@ -277,7 +277,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Full-Stack Developer Opportunity / Project Inquiry"
+                  placeholder="Web Developer Opportunity / Project Inquiry"
                   className={`w-full px-4 py-3 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-50 border ${
                     errors.subject ? 'border-red-500' : 'border-slate-800 dark:border-slate-800 light:border-slate-200'
                   } text-xs text-slate-100 dark:text-slate-100 light:text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors`}
